@@ -1,0 +1,218 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu-item {
+    margin-right: 24px;
+  }
+
+  &__menu-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &__logo {
+    display: block;
+    margin-left: -96px;
+  }
+
+  &__menu-link {
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    line-height: .85;
+  }
+
+
+}
+
+.hero {
+  background-image: url('../images/header/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+
+
+  &__title {
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 107%;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+.design {
+  padding: 80px 10px 120px;
+  text-align: center;
+
+  &__title {
+    font-size: 43px;
+    line-height: 135%;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 18px;
+
+    text-align: center;
+    letter-spacing: 0.8px;
+
+    color: #A0A0A0;
+    margin-bottom: 26px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 162%;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    color: #000000;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 0 12.5px
+  }
+
+  &__img {
+    margin-bottom: 48.47px;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 111%;
+    margin-bottom: 23px;
+  }
+
+  &__item-link {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+
+
+@media (max-width: 768px) {
+  .design {
+    &__list {
+      display: block;
+    }
+
+    &__item {
+      margin: 0 auto;
+      height: 280px;
+    }
+
+    &__img {
+      margin-bottom: 10px;
+    }
+
+    &__item-title {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 486px) {
+  .header {
+    &__top {
+      display: block;
+      text-align: center;
+    }
+
+    &__menu {
+      justify-content: space-around;
+      margin-bottom: 24px;
+    }
+
+    &__menu-item {
+      margin-right: 0;
+    }
+
+    &__logo {
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 24px;
+    }
+
+    &__logo-link {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 30px;
+      line-height: 102%;
+    }
+  }
+
+  .design {
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
