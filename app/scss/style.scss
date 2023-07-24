@@ -5,6 +5,44 @@
 @import 'global';
 
 
+body {
+  background-color: #FFFEF2;
+}
+
+.subtitle {
+  color: #333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: #333;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39.9px;
+  margin-bottom: 27px;
+}
+
+.btn {
+  padding: 20px 59px 20px 24px;
+  border: 1px solid rgba(51, 51, 51, 0.20);
+  display: inline-block;
+  color: #333333;
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px;
+  max-width: 300px;
+  width: 100%;
+}
+
 .header {
   &__top {
     text-align: center;
@@ -226,6 +264,71 @@
     top: 0;
     left: 0;
   }
+}
+
+.slider {
+  padding-top: 200px;
+  padding-bottom: 190px;
+
+  &__container {
+    max-width: 1281px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    max-width: 427px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 48px;
+    cursor: pointer;
+    transition: border-bottom .4s;
+  }
+
+  &__item:hover {
+    border-bottom: 2px solid #000000;
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 24px;
+    color: #333333;
+  }
+
+  span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.product {
+   color: #333;
+   padding-bottom: 96px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 402px;
+  }
+
+  &__title {
+    max-width: 361px;
+  }
+
+  &__text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.2px;
+    margin-bottom: 26px;
+  }
+
+  &__btn {
+    background-image: url('../images/icons/btn-arrow.svg');
+  }
+
+
 }
 
 
