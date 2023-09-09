@@ -269,6 +269,7 @@ body {
 .slider {
   padding-top: 200px;
   padding-bottom: 190px;
+  margin: 0 auto;
 
   &__container {
     max-width: 1281px;
@@ -300,11 +301,13 @@ body {
 }
 
 .product {
-   color: #333;
-   padding-bottom: 96px;
+  color: #333;
+  padding-bottom: 96px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__content {
@@ -326,9 +329,96 @@ body {
 
   &__btn {
     background-image: url('../images/icons/btn-arrow.svg');
+    margin-bottom: 20px;
+  }
+
+  &__citate {
+    padding-top: 202px;
+    display: block;
+    max-width: 675px;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39.9px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+
+  &__author {
+    text-align: center;
   }
 
 
+}
+
+.footer {
+  background-color: #252525;
+  padding: 53px 0;
+  color: #FFFEF2;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 30px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #FFFEF2;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    line-height: 35px;
+  }
+
+  &__link {
+    color: #FFFEF2;
+    line-height: 35px;
+  }
+
+  &__form {
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    display: flex;
+  }
+
+  &__mail {
+    height: 37px;
+    border: 1px solid #FFFEF2;
+    background-color: transparent;
+    width: 100%;
+    max-width: 490px;
+    padding: 2px 10px;
+  }
+
+  &__mail::placeholder {
+    color: #FFFEF2;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+  }
+
+  &__form-btn {
+    display: block;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #FFFEF2;
+    border-left: none;
+    background-color: transparent;
+    background-image: url('../images/icons/btn-arrow-wh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 
@@ -367,6 +457,13 @@ body {
 
   }
 
+  .slider {
+    &__item {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
   .hidden {
     display: block;
   }
@@ -382,4 +479,18 @@ body {
       padding: 40px;
     }
   }
+
+  .footer {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
+
+@media (max-width: 350px) {
+  .footer {
+    &__wrapper {
+      display: block;
+    }
+  }
+}  
